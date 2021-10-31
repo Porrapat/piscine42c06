@@ -21,21 +21,21 @@ void	ft_putstr(char *str)
 
 void	ft_swap(char **a, char **b)
 {
-	char *c;
+	char	*c;
 
 	c = *a;
 	*a = *b;
 	*b = c;
 }
 
-int		ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
 	while (*s1 != '\0' && (*s1 == *s2))
 	{
 		s1++;
 		s2++;
 	}
-	return (*(unsigned char*)s1 - *(unsigned char*)s2);
+	return (*(unsigned char *)s1 - *(unsigned char *)s2);
 }
 
 void	ft_str_sort(char **arr, int size, int offset)
@@ -62,7 +62,7 @@ void	ft_str_sort(char **arr, int size, int offset)
 	}
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int	index;
 
